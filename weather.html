@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+
+    <body id="bodyy" class="bg-blue-950 h-screen w-full">
+        <div id="id" class="flex-col justify-center text-white">
+            <!-- Title -->
+            <div class="flex justify-center text-4xl font-bold mt-3">
+                <h1>Simple Weather App</h1>
+            </div>
+
+            <!-- Input and Submit -->
+            <div class="flex justify-center mt-10 gap-10">
+                <div class="flex">
+                    <input id="inputbox" type="text" class="bg-blue-950 border-b border-white focus:outline-none p-2 text-white" placeholder="Enter city">
+                </div>
+                <div class="flex">
+                    <button id="isubmitbt" class="bg-red-500 px-[20px] rounded-xl active:bg-red-400 active:text-black">Submit</button>
+                </div>
+            </div>
+
+            <!-- Weather Display Boxes -->
+            <div class="flex justify-center gap-20">
+                <div class="mt-20 h-[400px] w-[25%] bg-white flex flex-col items-center justify-start rounded-xl">
+                    <div id="cityname" class="font-bold text-blue-800 text-4xl mt-6"></div>
+                    <div id="temp" class="text-6xl text-black font-bold mt-6"></div>
+                    <img id="cloudy" src="" alt="Weather Icon" class="hidden h-[150px]  mt-4">
+
+                    <div id="climate" class="text-lg text-blue-900 mt-4"></div>
+                </div>
+
+                <!-- Second Box Placeholder -->
+                 <div class="mt-20 h-[400px] w-[25%] bg-white flex flex-col items-center justify-start rounded-xl">
+                <div id="cityname2" class="font-bold text-blue-800 text-4xl mt-6"></div>
+                <div id="temp2" class="text-6xl text-black font-bold mt-6"></div>
+                <img id="cloudy2" src="" alt="Weather Icon" class="hidden h-[150px] mt-4">
+                <div id="climate2" class="text-lg text-blue-900 mt-4"></div>
+            </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="weather.js"></script>
+    </body>
+</html>
